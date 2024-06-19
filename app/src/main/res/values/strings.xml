@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MULTI NOTES</string>
+    <string name="action_settings">settings</string>
+    <string name="action_favorite">favorite</string>
+    <string name="action_add_note">Thêm note mới</string>
+    <string name="action_save">Lưu</string>
+    <string name="alarm">alarm</string>
+    <string name="add_alert">Thêm nhắc nhở</string>
+    <string name="add_photo">thêm hình ảnh</string>
+</resources>

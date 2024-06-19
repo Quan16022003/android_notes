@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reminder_dialog.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Thêm nhắc nhở"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/selectDateBtn"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Chọn ngày"
+        android:textAlignment="viewStart"
+        app:icon="@drawable/ic_date_range_24"
+        app:iconPadding="5dp" />
+
+    <Button
+        android:id="@+id/selectTimeBtn"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Chọn thời gian"
+        android:textAlignment="viewStart"
+        app:icon="@drawable/ic_access_time_24"
+        app:iconPadding="5dp" />
+    <TextView
+        android:id="@+id/errorTimeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectTimeBtn"
+        android:drawableLeft="@drawable/ic_error_14"
+        android:drawableTint="#F44336"
+        android:text=" Thời gian đã qua"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/errorTimeTv"
+        android:layout_marginTop="8dp"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/deleteBtn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+
+        <Button
+            android:id="@+id/okBtn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="OK" />
+    </LinearLayout>
+</RelativeLayout>
